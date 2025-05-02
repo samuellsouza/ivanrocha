@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Rocha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="bg-black bg-opacity-90 fixed w-full z-10">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-music text-2xl text-purple-500 mr-2"></i>
+                    <span class="text-xl font-bold">IVAN ROCHA</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-purple-400 transition">Início</a>
+                    <a href="#videos" class="hover:text-purple-400 transition">Vídeos</a>
+                    <a href="#gallery" class="hover:text-purple-400 transition">Galeria</a>
+                    <a href="#events" class="hover:text-purple-400 transition">Eventos</a>
+                    <a href="#contact" class="hover:text-purple-400 transition">Contato</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-95 px-6 py-4">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="hover:text-purple-400 transition">Início</a>
+                <a href="#videos" class="hover:text-purple-400 transition">Vídeos</a>
+                <a href="#gallery" class="hover:text-purple-400 transition">Galeria</a>
+                <a href="#events" class="hover:text-purple-400 transition">Eventos</a>
+                <a href="#contact" class="hover:text-purple-400 transition">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center pt-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Música que <span class="text-purple-400">toca a alma</span></h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">Descubra a arte e a paixão por trás de cada nota e performance.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#events" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-medium transition">Próximos Eventos</a>
+                <a href="#videos" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-full font-medium transition">Assistir Vídeos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Artista" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6">Sobre o Artista</h2>
+                    <p class="text-gray-300 mb-6">Com mais de 10 anos de experiência no cenário musical, nosso artista combina técnica impecável com uma expressão emocional profunda, criando performances que ressoam com públicos de todas as idades.</p>
+                    <p class="text-gray-300 mb-6">Formado nas melhores escolas de música e com participações em festivais internacionais, ele traz uma perspectiva única e contemporânea para cada apresentação.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-gray-700 p-4 rounded-lg text-center flex-1">
+                            <i class="fas fa-music text-2xl text-purple-400 mb-2"></i>
+                            <h3 class="font-bold">+200</h3>
+                            <p class="text-sm text-gray-300">Shows realizados</p>
+                        </div>
+                        <div class="bg-gray-700 p-4 rounded-lg text-center flex-1">
+                            <i class="fas fa-globe text-2xl text-purple-400 mb-2"></i>
+                            <h3 class="font-bold">15</h3>
+                            <p class="text-sm text-gray-300">Países visitados</p>
+                        </div>
+                        <div class="bg-gray-700 p-4 rounded-lg text-center flex-1">
+                            <i class="fas fa-trophy text-2xl text-purple-400 mb-2"></i>
+                            <h3 class="font-bold">12</h3>
+                            <p class="text-sm text-gray-300">Prêmios conquistados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Últimos Vídeos</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Assista às performances mais recentes e momentos marcantes dos shows.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="video-thumbnail rounded-lg overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show ao vivo" class="w-full h-64 object-cover">
+                    <div class="play-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="p-4 bg-gray-800">
+                        <h3 class="font-bold text-lg mb-2">Show no Festival Internacional</h3>
+                        <p class="text-gray-400 text-sm">15 de Junho, 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="video-thumbnail rounded-lg overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Performance acústica" class="w-full h-64 object-cover">
+                    <div class="play-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="p-4 bg-gray-800">
+                        <h3 class="font-bold text-lg mb-2">Sessão Acústica Exclusiva</h3>
+                        <p class="text-gray-400 text-sm">2 de Maio, 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="video-thumbnail rounded-lg overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1413&q=80" alt="Colaboração musical" class="w-full h-64 object-cover">
+                    <div class="play-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="p-4 bg-gray-800">
+                        <h3 class="font-bold text-lg mb-2">Colaboração com Artista Convidado</h3>
+                        <p class="text-gray-400 text-sm">22 de Abril, 2023</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-medium transition">Ver Todos os Vídeos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Galeria de Fotos</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Momentos capturados nos bastidores e durante as performances.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Gallery items -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show 1" class="w-full h-48 object-cover">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show 2" class="w-full h-48 object-cover">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show 3" class="w-full h-48 object-cover">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show 4" class="w-full h-48 object-cover">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show 5" class="w-full h-48 object-cover">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1413&q=80" alt="Show 6" class="w-full h-48 object-cover">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Show 7" class="w-full h-48 object-cover">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show 8" class="w-full h-48 object-cover">
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-medium transition">Ver Galeria Completa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Próximos Eventos</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Confira onde você pode assistir ao vivo as próximas performances.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transition hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Evento 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="bg-purple-600 text-white text-xs px-3 py-1 rounded-full">Ao Vivo</span>
+                            <span class="text-gray-400 text-sm">15 Julho, 2023</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Festival de Verão</h3>
+                        <p class="text-gray-400 mb-4">Participação especial no maior festival de música do país.</p>
+                        <div class="flex items-center text-gray-400 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Parque da Cidade, São Paulo</span>
+                        </div>
+                        <a href="#" class="inline-block bg-transparent border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-6 py-2 rounded-full font-medium transition">Comprar Ingresso</a>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transition hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Evento 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="bg-purple-600 text-white text-xs px-3 py-1 rounded-full">Tour</span>
+                            <span class="text-gray-400 text-sm">28 Agosto, 2023</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Turnê Nacional</h3>
+                        <p class="text-gray-400 mb-4">Show exclusivo com repertório do novo álbum.</p>
+                        <div class="flex items-center text-gray-400 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Teatro Municipal, Rio de Janeiro</span>
+                        </div>
+                        <a href="#" class="inline-block bg-transparent border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-6 py-2 rounded-full font-medium transition">Comprar Ingresso</a>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transition hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Evento 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="bg-purple-600 text-white text-xs px-3 py-1 rounded-full">Workshop</span>
+                            <span class="text-gray-400 text-sm">10 Setembro, 2023</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Masterclass Musical</h3>
+                        <p class="text-gray-400 mb-4">Aula especial sobre técnicas e composição musical.</p>
+                        <div class="flex items-center text-gray-400 mb-4">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Centro Cultural, Belo Horizonte</span>
+                        </div>
+                        <a href="#" class="inline-block bg-transparent border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-6 py-2 rounded-full font-medium transition">Reservar Vaga</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Entre em Contato</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Para contratos, entrevistas ou simplesmente para dizer olá.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-300 mb-2">Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-300 mb-2">Mensagem</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition">Enviar Mensagem</button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-10">
+                    <div class="bg-gray-700 p-8 rounded-lg h-full">
+                        <h3 class="text-xl font-bold mb-6">Informações de Contato</h3>
+                        
+                        <div class="flex items-start mb-6">
+                            <i class="fas fa-envelope text-purple-400 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium mb-1">Email</h4>
+                                <p class="text-gray-400">contato@musicaearte.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <i class="fas fa-phone-alt text-purple-400 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium mb-1">Telefone</h4>
+                                <p class="text-gray-400">+55 (11) 98765-4321</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <i class="fas fa-map-marker-alt text-purple-400 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium mb-1">Endereço</h4>
+                                <p class="text-gray-400">Rua da Música, 123<br>São Paulo - SP</p>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold mb-4 mt-8">Redes Sociais</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="social-icon bg-gray-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-600">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="social-icon bg-gray-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-600">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="social-icon bg-gray-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-600">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                            <a href="#" class="social-icon bg-gray-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-600">
+                                <i class="fab fa-spotify text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-purple-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Assine nossa Newsletter</h2>
+            <p class="text-purple-200 max-w-2xl mx-auto mb-8">Receba atualizações sobre novos vídeos, eventos exclusivos e lançamentos.</p>
+            
+            <form class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Seu melhor email" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-900">
+                <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-r-lg font-medium transition">Assinar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <i class="fas fa-music text-2xl text-purple-500 mr-2"></i>
+                    <span class="text-xl font-bold">Ivan Rocha</span>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="hover:text-purple-400 transition">Termos de Uso</a>
+                    <a href="#" class="hover:text-purple-400 transition">Política de Privacidade</a>
+                    <a href="#" class="hover:text-purple-400 transition">FAQ</a>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Música & Arte. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.video-thumbnail {
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.video-thumbnail:hover {
+    transform: scale(1.03);
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.video-thumbnail:hover .play-icon {
+    opacity: 1;
+    font-size: 3.5rem;
+}
+
+.gallery-item {
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.social-icon {
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
