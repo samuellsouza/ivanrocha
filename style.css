@@ -44,3 +44,8 @@
 .social-icon:hover {
     transform: translateY(-5px);
 }
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
